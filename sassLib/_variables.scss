@@ -1,0 +1,398 @@
+//colors_____________________________________
+
+$grey: #4F5665 !default;
+$grey2: #AFB5C0 !default;
+$grey3: #EEEFF2 !default;
+$grey4: #DDDDDD !default;
+$grey5: #F8F8F8 !default;
+$red: #F53855 !default;
+$red2: #F53838 !default;
+$white: #fff !default;
+$white2: #dde0e4 !default;
+$black: #0B132A !default;
+$black1: #0D1025 !default;
+$pink: #FFECEC !default;
+$green: #2FAB73 !default;
+$yellow: #FEA250 !default;
+
+//color pallete__________________________________________
+
+$colors: (
+    "grey": $grey,
+    "grey2": $grey2,
+    "grey3": $grey3,
+    "grey4": $grey4,
+    "grey5": $grey5,
+    "red": $red,
+    "red2": $red2,
+    "white":$white,
+    "white2":$white2,
+    "black": $black,
+    "black1": $black1,
+    "pink": $pink,
+    "green": $green,
+    "yellow": $yellow,
+);
+
+//margins______________________________________
+
+$m0: 0px !default;
+$m0-5: 5px !default;
+$m1: 10px !default;
+$m1_5: 15px !default;
+$m2: 20px !default;
+$m2-5: 25px !default;
+$m3: 30px !default;
+$m4: 40px !default;
+$m5: 50px !default;
+$m6: 60px !default;
+$m7: 70px !default;
+$m8: 80px !default;
+$m9: 90px !default;
+$m10: 100px !default;
+$m11: 110px !default;
+$m12: 120px !default;
+$m13: 155.81px !default;
+$m14: 169px !default;
+$m15: 230px !default;
+$m16: 250px !default;
+$m17: 340px !default;
+$m-auto: auto !default;
+
+$m: margin !default;
+$mt: margin-top !default;
+$mb: margin-bottom !default;
+$ml: margin-left !default;
+$mr: margin-right !default;
+
+//margins tables_____________________________________________
+
+$type-margin: (
+    "m" : $m,
+    "mt" : $mt,
+    "mb" : $mb,
+    "ml" : $ml,
+    "mr" : $mr,
+);
+
+$margins: (
+    "0": $m0,
+    "0-5" : $m0-5,
+    "1" : $m1,
+    "1-5" : $m1_5,
+    "2" : $m2,
+    "2-5" : $m2-5,
+    "3" : $m3,
+    "4" : $m4,
+    "5" : $m5,
+    "6": $m6,
+    "7" : $m7,
+    "8" : $m8,
+    "9" : $m9,
+    "10" : $m10,
+    "11" : $m11,
+    "12" : $m12,
+    "13" : $m13,
+    "14" : $m14,
+    "15" : $m15,
+    "16" : $m16,
+    "17" : $m17,
+    "auto": $m-auto
+
+
+);
+
+
+//paddings________________________________________
+
+$p0: 0px !default;
+$p05: 5px !default;
+$p07: 7px !default;
+$p1: 10px !default;
+$p2: 15px !default;
+$p3: 20px !default;
+$p4: 30px !default;
+$p5: 40px !default;
+$p6: 50px !default;
+$p7: 60px !default;
+$p8: 70px !default;
+$p9: 90px !default;
+
+$p: padding !default;
+$pt: padding-top !default;
+$pb: padding-bottom !default;
+$pl: padding-left !default;
+$pr: padding-right !default;
+
+//padding tables___________________________________________
+
+$type-padding: (
+    "p" : $p,
+    "pt" : $pt,
+    "pb" : $pb,
+    "pl" : $pl,
+    "pr" : $pr,
+);
+
+$paddings: (
+    "0": $p0,
+    "05": $p05,
+    "07": $p07,
+    "1" : $p1,
+    "2" : $p2,
+    "3" : $p3,
+    "4" : $p4,
+    "5" : $p5,
+    "6" : $p6,
+    "7" : $p7,
+    "8" : $p8,
+    "9" : $p9,
+);
+
+//border______________________________________________
+
+$b: border !default;
+$bt: border-top !default;
+$bb: border-buttom !default;
+$br: border-right !default;
+$bl: border-left !default;
+
+$b0: 0px !default;
+$b1: 1px !default;
+$b2: 2px !default;
+
+$type-border: (
+    "b" : $b,
+    "bt" : $bt,
+    "bb" : $bb,
+    "br" : $br,
+    "bl" : $bl,
+);
+
+$borders: (
+    "0" : $b0,
+    "1" : $b1,
+    "2" : $b2,
+
+);
+
+$b-radius-07-5: 7.5px !default;
+$b-radius-1: 10px !default;
+$b-radius-2: 50px !default;
+$b-radius-3: 70px !default;
+
+$borders-radius: (
+    "07-5": $b-radius-07-5,
+    "1": $b-radius-1,
+    "2": $b-radius-2,
+    "3": $b-radius-3,
+);
+
+
+//width_________________________________________
+
+$w1: 10% !default;
+$w2: 20% !default;
+$w3: 30% !default;
+$w4: 40% !default;
+$w5: 50% !default;
+$w6: 60% !default;
+$w7: 70% !default;
+$w8: 80% !default;
+$w9: 90% !default;
+$w10: 100% !default;
+
+$w-px0-15: 15px !default;
+$w-px1: 25px !default;
+$w-px1-5: 45px !default;
+$w-px2: 50px !default;
+$w-px3: 55px !default;
+$w-px4: 60px !default;
+$w-px4-1: 70px !default;
+$w-px4-3: 120px !default;
+$w-px4-5: 140px !default;
+$w-px5: 150px !default;
+$w-px6: 177.88px !default;
+$w-px7: 211.829px !default;
+$w-px8: 250px !default;
+$w-px8-1: 265px !default;
+$w-px8-5: 280px !default;
+$w-px9: 330px !default;
+$w-px10: 340px !default;
+$w-px11: 371.61px !default;
+$w-px12: 380px !default;
+$w-px13: 383.41px !default;
+$w-px14: 400px !default;
+$w-px15: 410px !default;
+$w-px16: 427.88px !default;
+$w-px17: 447.81px !default;
+$w-px18: 500px !default;
+$w-px19: 555px !default;
+$w-px20: 1140px !default;
+
+
+
+//width tables________________________________________________
+
+$width: (
+    "1" : $w1,
+    "2" : $w2,
+    "3" : $w3,
+    "4" : $w4,
+    "5" : $w5,
+    "6" : $w6,
+    "7" : $w7,
+    "8" : $w8,
+    "9" : $w9,
+    "10" : $w10,
+);
+
+$width-px: (
+    "0-15" : $w-px0-15,
+    "1" : $w-px1,
+    "1-5" : $w-px1-5,
+    "2" : $w-px2,
+    "3" : $w-px3,
+    "4" : $w-px4,
+    "4-1" : $w-px4-1,
+    "4-3" : $w-px4-3,
+    "4-5" : $w-px4-5,
+    "5" : $w-px5,
+    "6" : $w-px6,
+    "7" : $w-px7,
+    "8" : $w-px8,
+    "8-1" : $w-px8-1,
+    "8-5" : $w-px8-5,
+    "9" : $w-px9,
+    "10" : $w-px10,
+    "11" : $w-px11,
+    "12" : $w-px12,
+    "13" : $w-px13,
+    "14" : $w-px14,
+    "15" : $w-px15,
+    "16" : $w-px16,
+    "17" : $w-px17,
+    "18" : $w-px18,
+    "19" : $w-px19,
+    "20" : $w-px20,
+    
+);
+
+//height_______________________________________________________
+
+$h1: 10% !default;
+$h2: 20% !default;
+$h3: 30% !default;  
+$h4: 40% !default;
+$h5: 50% !default;
+$h6: 60% !default;
+$h7: 70% !default;
+$h8: 80% !default;
+$h9: 90% !default;
+$h10: 100% !default;
+$h-auto: auto !default;
+
+$h-px0-15: 15px !default;          
+$h-px0-16: 16px !default;
+$h-px1: 33px !default;
+$h-px2: 45px !default;
+$h-px3: 50px !default;
+$h-px4: 55px !default;
+$h-px5: 60px !default;
+$h-px6: 62px !default;
+$h-px7: 80.291px !default;
+$h-px8: 90px !default;
+$h-px9: 125.57px !default;
+$h-px10: 140px !default;
+$h-px11: 165px !default;
+$h-px12: 189.218px !default;
+$h-px13: 200px !default; 
+$h-px14: 230px !default; 
+$h-px15: 233px !default; 
+$h-px16: 382px !default;
+$h-px16-5: 350px !default;
+$h-px17: 414px !default;
+$h-px18: 537px !default;
+$h-px19: 760px !default;
+ 
+
+//height table__________________________________________________
+
+$height: (
+    "1" : $h1,
+    "2" : $h2,
+    "3" : $h3,
+    "4" : $h4,
+    "5" : $h5,
+    "6" : $h6,
+    "7" : $h7,
+    "8" : $h8,
+    "9" : $h9,
+    "10" : $h10,
+    "-auto" : $h-auto,
+);
+
+$height-px: (
+    "0-15" : $h-px0-15,
+    "0-16" : $h-px0-16,
+    "1" : $h-px1,
+    "2" : $h-px2,
+    "3" : $h-px3,
+    "4" : $h-px4,
+    "5" : $h-px5,
+    "6" : $h-px6,
+    "7" : $h-px7,
+    "8" : $h-px8,
+    "9" : $h-px9,
+    "10" : $h-px10,
+    "11" : $h-px11, 
+    "12" : $h-px12,
+    "13" : $h-px13,
+    "14" : $h-px14,
+    "15" : $h-px15,
+    "16" : $h-px16,
+    "16-5" : $h-px16-5,
+    "17" : $h-px17,
+    "18" : $h-px18,
+    "19" : $h-px19,
+);
+
+//font size____________________________________________
+
+      
+
+$fs-1 : 14px !default;
+$fs-2 : 16px !default;
+$fs-3 : 18px !default;
+$fs-4 : 20px !default;
+$fs-5 : 25px !default;
+$fs-6 : 35px !default;
+$fs-7 : 50px !default;
+
+$font-size: (
+    "1" : $fs-1,
+    "2" : $fs-2,
+    "3" : $fs-3,
+    "4" : $fs-4,
+    "5" : $fs-5,
+    "6" : $fs-6,
+    "7" : $fs-7,
+);
+
+// font weight___________________________________________
+
+$fw-1 : 400 !default;
+$fw-2 : 500 !default;
+$fw-3 : 600 !default;
+$fw-4 : 700 !default;
+
+$font-weight: (
+    '1' : $fw-1,
+    '2' : $fw-2,
+    '3' : $fw-3,
+    '4' : $fw-4,
+)
+
+
+
+

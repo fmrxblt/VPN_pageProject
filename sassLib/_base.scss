@@ -1,0 +1,615 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+.txt-dicr-none {
+    text-decoration: none;
+}
+
+.lst-style-none {
+    list-style: none;
+}
+
+.box-shadow {
+    box-shadow: 5px 40px 40px #f5f5f5;;
+}
+
+.box-shadow2 {
+    box-shadow: 5px 40px 100px #efeeee;
+}
+
+.box-shadow3 {
+    box-shadow: 1px 15px 20px #c9c9c9
+}
+
+.box-shadow-btn {
+    box-shadow: 3px 10px 40px #ff6363;
+}
+
+.bg-gradient {
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+}
+
+@each $key, $val in $borders-radius {
+    .b-radius-#{$key} {
+        border-radius: $val;
+    }
+}
+
+@each $key, $val in $colors {
+    .bg-#{$key} {
+        background-color: $val;
+      }
+
+    .color-#{$key} {
+        color: $val;
+    }
+
+    
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.av {
+    width: 50px;
+    height: 50px;
+}
+
+.anim {
+    animation: fadeIn 1s;
+}
+
+  
+.active-slide {
+    border: 2px solid #f53838;
+    animation: fadeIn 1s;
+    box-shadow: 5px 10px 40px #efeeee;
+    margin-left: 50px;
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.active-point {
+    width: 45px;
+    background-color: #f53838;
+}
+  
+.hide {
+    display: none;
+}
+
+@include lg {
+    .d-flex {
+        display: flex;
+    }
+    
+    .d-flex-2row {
+        flex-wrap: wrap;
+    }
+    
+    .d-flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .d-flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @each $key, $val in $colors {
+        .bg-#{$key} {
+            background-color: $val;
+          }
+    
+        .color-#{$key} {
+            color: $val;
+        }
+    
+        @each $key1, $val1 in $type-border { 
+            @each $key2, $val2 in $borders {
+                .#{$key1}-#{$key2}-#{$key} {
+                    #{$val1} : $val2 solid $val;
+                }
+            }
+            
+        }
+    
+    }
+    
+    @each $key1, $val1 in $type-margin {
+        @each $key2, $val2 in $margins {
+            .#{$key1}-#{$key2} {
+                #{$val1} : $val2;
+            }
+        }
+        
+    }
+    
+    @each $key1, $val1 in $type-padding {
+        @each $key2, $val2 in $paddings {
+            .#{$key1}-#{$key2} {
+                #{$val1} : $val2;
+            }
+        }
+        
+    }
+    
+    @each $key, $val in $borders-radius {
+        .b-radius-#{$key} {
+            border-radius: $val;
+        }
+    }
+    
+    @each $key, $val in $width {
+        .w#{$key} {
+            width: $val;
+        }
+    }
+    
+    @each $key, $val in $width-px {
+        .w-px#{$key} {
+            width: $val;
+        }
+    }
+    
+    @each $key, $val in $height {
+        .h#{$key} {
+            height: $val;
+        }
+    }
+    
+    @each $key, $val in $height-px {
+        .h-px#{$key} {
+            height: $val;
+        }
+    }
+    
+    @each $key, $val in $font-size {
+        .fs-#{$key} {
+            font-size: $val;
+        }
+    }
+    
+    @each $key, $val in $font-weight {
+        .fw-#{$key} {
+            font-weight: $val;
+        }
+    }
+    
+    .justf-content-center {
+        justify-content: center;
+    }
+    
+    .justf-content-btwn {
+        justify-content: space-between;
+    }
+    
+    .d-block {
+        display: block;
+    }
+    
+    
+    
+    .d-none {
+        display: none;
+    }
+    
+    .algn-itm-center {
+        align-items: center;
+    }
+    
+    .txt-algn-center {
+        text-align: center;
+    }
+    
+    .txt-algn-start {
+        text-align: start;
+    }
+    
+    .txt-algn-end{
+        text-align: end;
+        
+    }
+    
+    .algn-itm-f-end {
+        align-items: flex-end;
+    }
+    
+    .txt-algn-left {
+        text-align: left;
+    }
+    
+    .transition {
+        transition: all 0.3s linear; 
+    }
+    
+    .justf-content-spc-evenly {
+        justify-content: space-evenly;
+    }
+    
+    .justf-content-spc-around {
+        justify-content: space-around;
+    }
+    
+    .txt-dicr-none {
+        text-decoration: none;
+    }
+    
+    .lst-style-none {
+        list-style: none;
+    }
+    
+    .flex-shrnk {
+        flex-shrink: 0;
+    }    
+    
+    .flex-shrnk1 {
+        flex-shrink: 1;
+    }  
+    
+    .fltr-blur {
+        filter: blur(27px);
+    }
+    .opacity {
+        opacity: 0.06;
+    }
+    
+    .fltr-blur1 {
+        filter: blur(57px);
+    }
+    
+    .box-shadow {
+        box-shadow: 5px 40px 40px #efeeee;
+    }
+    
+    .box-shadow2 {
+        box-shadow: 5px 40px 100px #efeeee;
+    }
+    
+    .box-shadow3 {
+        box-shadow: 1px 15px 20px #c9c9c9
+    }
+    
+    .box-shadow-btn {
+        box-shadow: 3px 10px 40px #ff6363;
+    }
+    
+    .bg-gradient {
+        background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+    }
+    
+    .line-height3 {
+        line-height: 30px;
+    }
+    
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    
+    .av {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .anim {
+        animation: fadeIn 1s;
+    }
+    
+      
+    .active-slide {
+        border: 2px solid #f53838;
+        animation: fadeIn 1s;
+        box-shadow: 5px 10px 40px #efeeee;
+        margin-left: 50px;
+    }
+      
+    @keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+      
+    .active-point {
+        width: 45px;
+        background-color: #f53838;
+    }
+      
+    .hide {
+        display: none;
+    }
+}
+
+@include sm {
+    .d-flex-sm {
+        display: flex;
+    }
+    
+    .d-flex-2row-sm {
+        flex-wrap: wrap;
+    }
+    
+    .d-flex-row-sm {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .d-flex-column-sm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @each $key, $val in $colors {
+        .bg-#{$key}-sm {
+            background-color: $val;
+          }
+    
+        .color-#{$key}-sm {
+            color: $val;
+        }
+    
+    
+        @include sm {
+            @each $key1, $val1 in $type-border {
+                @each $key2, $val2 in $borders {
+                    .#{$key1}-#{$key2}-#{$key}-sm {
+                        #{$val1} : $val2 solid $val;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    @each $key1, $val1 in $type-margin {
+        @each $key2, $val2 in $margins {
+            .#{$key1}-#{$key2}-sm {
+                #{$val1} : $val2;
+            }
+        }
+        
+    }
+    
+    @each $key1, $val1 in $type-padding {
+        @each $key2, $val2 in $paddings {
+            .#{$key1}-#{$key2}-sm {
+                #{$val1} : $val2;
+            }
+        }
+        
+    }
+    
+    @each $key, $val in $borders-radius {
+        .b-radius-#{$key}-sm {
+            border-radius: $val;
+        }
+    }
+    
+    @each $key, $val in $width {
+        .w#{$key}-sm {
+            width: $val;
+        }
+    }
+    
+    @each $key, $val in $width-px {
+        .w-px#{$key}-sm {
+            width: $val;
+        }
+    }
+    
+    @each $key, $val in $height {
+        .h#{$key}-sm {
+            height: $val;
+        }
+    }
+    
+    @each $key, $val in $height-px {
+        .h-px#{$key}-sm {
+            height: $val;
+        }
+    }
+    
+    @each $key, $val in $font-size {
+        .fs-#{$key}-sm {
+            font-size: $val;
+        }
+    }
+    
+    @each $key, $val in $font-weight {
+        .fw-#{$key}-sm {
+            font-weight: $val;
+        }
+    }
+    
+    .justf-content-center-sm {
+        justify-content: center;
+    }
+    
+    .justf-content-btwn-sm {
+        justify-content: space-between;
+    }
+    
+    .d-block-sm {
+        display: block;
+    }
+    
+    
+    
+    .d-none-sm {
+        display: none;
+    }
+    
+    .algn-itm-center-sm {
+        align-items: center;
+    }
+    
+    .txt-algn-center-sm {
+        text-align: center;
+    }
+    
+    .txt-algn-start-sm {
+        text-align: start;
+    }
+    
+    .txt-algn-end-sm {
+        text-align: end;
+        
+    }
+    
+    .algn-itm-f-end-sm {
+        align-items: flex-end;
+    }
+
+    .algn-itm-start-sm {
+        align-items: start ;
+    }
+    
+    .txt-algn-left-sm {
+        text-align: left;
+    }
+    
+    .transition-sm {
+        transition: all 0.3s linear; 
+    }
+    
+    .justf-content-spc-evenly-sm {
+        justify-content: space-evenly;
+    }
+    
+    .justf-content-spc-around-sm {
+        justify-content: space-around;
+    }
+    
+    .txt-dicr-none-sm {
+        text-decoration: none;
+    }
+    
+    .lst-style-none-sm {
+        list-style: none;
+    }
+    
+    .flex-shrnk-sm {
+        flex-shrink: 0;
+    }    
+    
+    .flex-shrnk1-sm {
+        flex-shrink: 1;
+    }  
+    
+    .fltr-blur-sm {
+        filter: blur(27px);
+    }
+    .opacity-sm {
+        opacity: 0.06;
+    }
+    
+    .fltr-blur1-sm {
+        filter: blur(57px);
+    }
+    
+    .box-shadow-sm {
+        box-shadow: 5px 40px 40px #efeeee;
+    }
+    
+    .box-shadow2-sm {
+        box-shadow: 5px 40px 100px #efeeee;
+    }
+    
+    .box-shadow3-sm {
+        box-shadow: 1px 15px 20px #c9c9c9
+    }
+    
+    .box-shadow-btn-sm {
+        box-shadow: 3px 10px 40px #ff6363;
+    }
+    
+    .bg-gradient-sm {
+        background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0.00) 88.56%);
+    }
+    
+    .line-height3-sm {
+        line-height: 30px;
+    }
+    
+    .overflow-hidden-sm {
+        overflow: hidden;
+    }
+    
+    .av-sm {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .anim-sm {
+        animation: fadeIn 1s;
+    }
+    
+      
+    .active-slide-sm {
+        border: 2px solid #f53838;
+        animation: fadeIn 1s;
+        box-shadow: 5px 10px 40px #efeeee;
+        margin-left: 50px;
+    }
+      
+    @keyframes fadeIn {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+    } 
+      
+    .active-point-sm {
+        width: 45px;
+        background-color: #f53838;
+    }
+      
+    .hide-sm {
+        display: none;
+    }
+
+    .menuContainer:hover > ul { 
+        display: block;
+    }
+
+    .object-fit-cvr-sm {
+        object-fit: cover;
+    }
+
+    .flex-wrap-sm {
+        flex-wrap: wrap;
+    }
+
+    
+}

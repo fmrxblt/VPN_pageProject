@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fmrx.blt",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-purgecss": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
